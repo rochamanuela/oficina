@@ -31,7 +31,7 @@ body {
 
 /* mobile styles */
 
-.banner {
+.mobile-template .banner {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -42,18 +42,18 @@ body {
     justify-content: space-between;
 }
 
-.banner .banner-texts {
+.mobile-template .banner .banner-texts {
     margin-bottom: 18px;
 }
 
-.banner-texts p {
+.mobile-template .banner-texts p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 26px;
 }
 
-.banner-texts h1 {
+.mobile-template .banner-texts h1 {
     max-width: 348px;
     font-weight: 600;
     font-size: 54px;
@@ -61,7 +61,7 @@ body {
     margin-bottom: 40px;
 }
 
-.banner-texts a {
+.mobile-template .banner-texts a {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -73,7 +73,7 @@ body {
     text-decoration: none;
 }
 
-.texts-content {
+.mobile-template .texts-content {
     padding: 60px 30px;
 }
 
@@ -93,7 +93,7 @@ body {
     margin-bottom: 24px;
 }
 
-.docs {
+.mobile-template .docs {
     padding: 0px 30px;
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@ body {
     margin-bottom: 60px;
 }
 
-.docs .item {
+.mobile-template .docs .item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,21 +111,21 @@ body {
     gap: 20px;
 }
 
-.docs .item img {
+.mobile-template .docs .item img {
     width: 120px;
     height: 82px;
     object-fit: cover;
     border-radius: 7px;
 }
 
-.docs .item div h1 {
+.mobile-template .docs .item div h1 {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
 }
 
-.docs .item div p {
+.mobile-template .docs .item div p {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -133,11 +133,11 @@ body {
     margin-top: 6px;
 }
 
-.contact-container {
+.mobile-template .contact-container {
     padding: 0px 30px;
 }
 
-p.contact {
+.mobile-template p.contact {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -145,7 +145,7 @@ p.contact {
     color: #C4C4C4;
 }
 
-div.contact-email {
+.mobile-template div.contact-email {
     background-image: url(images/button-background.png);
     background-size: cover;
     padding-top: 15px;
@@ -156,12 +156,133 @@ div.contact-email {
     border-radius: 30px;
 }
 
-a.contact {
+.mobile-template a.contact {
     color: #FFF;
     text-decoration: none;
 }
 
-img.logo-ifsp {
+.mobile-template img.logo-ifsp {
     margin-top: 70px;
     padding: 40px;
+}
+
+/* desktop styles */
+
+.desktop-template .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-image: url(images/wallpaper-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.desktop-template .banner .banner-texts {
+    margin-bottom: 18px;
+}
+
+.desktop-template .banner-texts p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.desktop-template .banner-texts h1 {
+    max-width: 507px;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+.desktop-template .banner-texts a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 13px 28px;
+    border-radius: 30px;
+    border: 2px solid #FFF;
+    text-decoration: none;
+}
+
+.desktop-template .main-container {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    gap: 50px;
+    align-items: center;
+}
+
+.desktop-template .docs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.desktop-template .docs .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #191919;
+    border-radius: 17px;
+    gap: 20px;
+    width: 380px;
+}
+
+.desktop-template .docs .item img {
+    width: 120px;
+    height: 82px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.desktop-template .docs .item div h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.desktop-template .docs .item div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.52);
+    margin-top: 6px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.blue {
+    text-decoration: none;
+    color: #18a6d1;
+    transition: .3s;
+}
+
+.blue:hover {
+    text-decoration: none;
+    color: #A782CB;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(27, 27, 27);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 52, 52);
+    border-radius: 0px;
+    border: 1px solid rgb(107, 107, 107);
 }
