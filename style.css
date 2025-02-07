@@ -31,16 +31,10 @@ body {
 
 /* mobile styles */
 
-.docs .item img {
-    width: 120px;
-    height: 82px;
-    object-fit: cover;
-}
-
 .banner {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
     background-image: url(images/wallpaper-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,13 +74,13 @@ body {
 }
 
 .texts-content {
-    padding: 80px 40px;
+    padding: 60px 30px;
 }
 
 .texts-content p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     text-align: justify;
     color: #C4C4C4;
 }
@@ -97,4 +91,77 @@ body {
     line-height: 34px;
     color: #FFFFFF;
     margin-bottom: 24px;
+}
+
+.docs {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.docs .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #191919;
+    border-radius: 17px;
+    gap: 20px;
+}
+
+.docs .item img {
+    width: 120px;
+    height: 82px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.docs .item div h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.docs .item div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.52);
+    margin-top: 6px;
+}
+
+.contact-container {
+    padding: 0px 30px;
+}
+
+p.contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    color: #C4C4C4;
+}
+
+div.contact-email {
+    background-image: url(images/button-background.png);
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+a.contact {
+    color: #FFF;
+    text-decoration: none;
+}
+
+img.logo-ifsp {
+    margin-top: 70px;
+    padding: 40px;
 }
