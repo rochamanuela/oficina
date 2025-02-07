@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #0C0C0C;
+    font-family: 'Figtree', serif;
+    color: #FFF;
+}
+
+.desktop-template {
+    display: none;
+}
+
+.mobile-template {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .desktop-template {
+        display: block;
+    }
+
+    .mobile-template {
+        display: none;
+    }
+}
+
+/* mobile styles */
+
+.docs .item img {
+    width: 120px;
+    height: 82px;
+    object-fit: cover;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-image: url(images/wallpaper-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 88vh;
+    justify-content: space-between;
+}
+
+.banner .banner-texts {
+    margin-bottom: 18px;
+}
+
+.banner-texts p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.banner-texts h1 {
+    max-width: 348px;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+.banner-texts a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 13px 28px;
+    border-radius: 30px;
+    border: 2px solid #FFF;
+    text-decoration: none;
+}
+
+.texts-content {
+    padding: 80px 40px;
+}
+
+.texts-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #C4C4C4;
+}
+
+.texts-content h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
